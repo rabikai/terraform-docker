@@ -1,12 +1,12 @@
 variable "resource_group_location" {
   type        = string
-  default     = "eastus"
+  default     = "West Europe"
   description = "Location for all resources."
 }
 
 variable "resource_group_name_prefix" {
   type        = string
-  default     = "rg"
+  default     = "learning"
   description = "Prefix of the resource group name that's combined with a random value so name is unique in your Azure subscription."
 }
 
@@ -25,7 +25,7 @@ variable "container_name_prefix" {
 variable "image" {
   type        = string
   description = "Container image to deploy. Should be of the form repoName/imagename:tag for images stored in public Docker Hub, or a fully qualified URI for other registries. Images from private registries require additional registry credentials."
-  default     = "mcr.microsoft.com/azuredocs/aci-helloworld"
+  default     = "rbikai/python"
 }
 
 variable "port" {
